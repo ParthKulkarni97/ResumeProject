@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+#search-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#search-input {
+  height: 30px;
+  width: 300px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+#search-button {
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#applications-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#message {
+  height: 30px;
+  width: 500px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#applications {
+  display: flex;
+  height: 200px;
+  width: 500px;
+  border: 1px solid black;
+  margin: 0 10px;
+}
+
+.application {
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.application p {
+  font-size: 16px;
+}

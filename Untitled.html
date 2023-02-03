@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume Template</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.getJSON("resumeData.json", function (data) {
+          let resume = data;
+          let resumeTemplate = `
+            <h1>${resume.name}</h1>
+            <h2>${resume.jobTitle}</h2>
+            <p>${resume.email}</p>
+            <p>${resume.phone}</p>
+            <h3>Objective:</h3>
+            <p>${resume.objective}</p>
+            <h3>Skills:</h3>
+            <ul>
+              ${resume.skills.map(skill => `<li>${skill}</li>`).join("")}
+            </ul>
+          `;
+          $("#root").append(resumeTemplate);
+        });
+      });
+    </script>
+  </body>
+</html>

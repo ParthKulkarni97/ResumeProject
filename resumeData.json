@@ -1,0 +1,14 @@
+{
+  "name": "John Doe",
+  "jobTitle": "Web Developer",
+  "email": "john.doe@email.com",
+  "phone": "555-555-5555",
+  "objective": "To obtain a challenging and dynamic web development position where I can utilize my skills and knowledge to contribute to the growth and success of the company.",
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "jQuery",
+    "React"
+  ]
+}
